@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1> Hello</h1>
-    <form action="#" method="get">
+    <form action="index.html" method="post">
       Email
       <input type="email" name="email" placeholdder="Entrez votre mail" style="border:10px;border:solid black 1px;">
       </br>
@@ -20,7 +20,7 @@
 <script> 
    $('#text').hide();
 
-     if ($('#form').is(':submit')) {
+     if ($('#form').submit) {
 
        $('#text').show().animate({fontSize:"+=20px",height:"100px",width:"600px"},4000);
      }
