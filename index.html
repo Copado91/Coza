@@ -5,18 +5,27 @@
   </head>
   <body>
     <h1> Hello</h1>
-    <form action="index.php" method="post">
+    <form action="#" method="get">
       Email
       <input type="email" name="email" placeholdder="Entrez votre mail" style="border:10px;border:solid black 1px;">
       </br>
       </br>
       Tel
       <input type="number" name="number" placeholdder="Entrez votre numero" style="border:10px; border:solid black 1px;">
-      <button type="submit" name="envoi" style="border:8px;border:solid black 1px;">Envoyer</button>
+      <button id="form" type="submit" name="envoi" style="border:8px;border:solid black 1px;">Enregistrer</button>
     </form>
+    <h2 id="text">Vous avez eté enregistrer avec succes</h2
   </body>
   
-  
+<script> 
+   $('#text').hide();
+
+     if ($('#form').is(':submit')) {
+
+       $('#text').show().animate({fontSize:"+=20px",height:"100px",width:"600px"},4000);
+     }
+
+</script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBSSLRFMXF"></script>
 <script>
